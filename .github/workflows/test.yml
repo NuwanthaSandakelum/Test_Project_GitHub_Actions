@@ -17,7 +17,7 @@ jobs:
         - name: Install dependencies
           run: dotnet restore
         - name: Test
-          run: dotnet test -configuration Release
+          run: dotnet test EmployeeManagement.Tests/EmployeeManagement.Tests.csproj
           
   build:
     needs: tests
